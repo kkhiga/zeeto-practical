@@ -1,0 +1,19 @@
+{
+  "name": "zeeto-practical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkhiga/zeeto-practical.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkhiga/zeeto-practical/issues"
+  },
+  "homepage": "https://github.com/kkhiga/zeeto-practical#readme"
+}
