@@ -10,14 +10,23 @@ $form-green: #a3cd44;
 $form-gray: #f3f3f3;
 
 
-// Sizes
+// Sizes (width, height, margins, paddings)
 $nav-height: 40px;
+
+$shadow: 4px 4px 8px rgba(0,0,0,0.25);
 
 $w-main-content: 872px;
 $h-main-content: 510px;
-$w-form-content: 591px;
 $mt-main-content: 47px;
+
+
+$w-product-content: 33.33%;
 $pt-product-content: 81px;
+
+$w-form-content: 67.77%;
+$pt-form-content: 46px;
+$pl-form-content: 87px;
+$pr-form-content: 90px;
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -31,6 +40,7 @@ nav {
 }
 
 h1 {
+    font-weight: 600;
     font-size: 28px;
 }
 
@@ -56,22 +66,37 @@ h2 {
 }
 
 #product-content {
-    width: 33.33%;
+    width: $w-product-content;
     height: 100%;
     padding-top: $pt-product-content;
 
     background: $light-green;
     border-radius: 10px 0px 0px 10px;
+    box-shadow: $shadow;
 
     text-align: center;
 }
 
 #form-content {
-    width: 67.77%;
+    width: $w-form-content;
     height: 100%;
+
+    padding-left: $pl-form-content;
+    padding-top: $pt-form-content;
+    padding-right: $pr-form-content;
 
     background: white;
     border-radius: 0px 10px 10px 0px;
+    box-shadow: $shadow;
+    
+    #img-badge {
+        img {
+            position: absolute;
+            width: 75px;
+            top: -30px;
+            left: -30px;
+        }
+    }
 }
 
 @include media-breakpoint-down(sm) { 
@@ -86,13 +111,29 @@ h2 {
     }
 
     #product-content, #form-content {
-        padding: 2rem;
+        padding: 3rem 1rem;
     }
 
     #product-content{
         img {
             max-height: 20vh;
         }
+    }
+
+    #img-badge {
+        width: 100%;
+        position: absolute;
+        top: -30px;
+        left: 0;
+
+        text-align: center;
+
+        img {
+            position: unset !important;
+            top: unset !important;
+            left: unset !important;
+        }
+        
     }
 }
 

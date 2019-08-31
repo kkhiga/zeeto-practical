@@ -14,21 +14,74 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark-green"></nav>
     <div class="container-fluid p-0">
-            <div id="main-content" class="row mx-auto">
-                <div id="product-content" class="col-12 col-md rounded-sm-0">
-                    <div>
-                        <img class="img-fluid" src="assets/gillette.png">
-                    </div>
-                    <div>
-                        This <span class="font-weight-bold font-italic text-uppercase">awesome</span> sample<br> is
-                        almost
-                        <span class="font-weight-bold font-italic">yours!</span>
-                    </div>
+        <div id="main-content" class="row mx-auto">
+            <div id="product-content" class="col-12 col-md rounded-sm-0">
+                <div>
+                    <img class="img-fluid" src="assets/gillette.png">
                 </div>
-                <div id="form-content" class="col-12 col-md-auto rounded-sm-0">
-
+                <div>
+                    This <span class="font-weight-bold font-italic text-uppercase">awesome</span> sample<br> is
+                    almost
+                    <span class="font-weight-bold font-italic">yours!</span>
                 </div>
             </div>
+            <div id="form-content" class="col-12 col-md-auto rounded-sm-0">
+                <div id="img-badge">
+                    <img src="assets/logo_copy.png">
+                </div>
+                <h1>Sign up while supplies last!</h1>
+                <h2>Most samples are available for a limited time only</h2>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" autocomplete="given-name" class="form-control" id="inputFirstName"
+                                placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" autocomplete="family-name" class="form-control" id="inputLastName"
+                                placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <input type="email" autocomplete="email" class="form-control" id="inputEmail"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-4 align-self-center">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                <label class="custom-control-label" for="customCheck1">Get newsletter</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <label class="col-3 my-auto">Choose Sample: </label>
+                        <select class="form-control col">
+                            <option>Gillette Razors</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-auto my-auto">Gender: </label>
+                        <div class="custom-control custom-radio mr-4">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline1">MALE</label>
+                        </div>
+                        <div class="custom-control custom-radio mr-2">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline2">FEMALE</label>
+                        </div>
+                    </div>
+                    <button>
+                        <div>SIGN UP
+                            <i class="material-icons">arrow_right</i>
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
