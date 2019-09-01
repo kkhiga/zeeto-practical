@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://use.typekit.net/ctk6rwy.css");
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -4100,7 +4101,7 @@ h2 {
 #form-content {
   width: 67.77%;
   height: 100%;
-  padding-left: 87px;
+  padding-left: 90px;
   padding-top: 46px;
   padding-right: 90px;
   background: white;
@@ -4123,6 +4124,9 @@ h2 {
 #form-content form .form-control:valid {
   border: 1px solid #a3cd44;
 }
+#form-content form .form-group {
+  margin-bottom: 1.25rem;
+}
 #form-content form .is-valid {
   border: 1px solid #a3cd44;
 }
@@ -4130,8 +4134,10 @@ h2 {
   font-size: 14px;
 }
 #form-content form .custom-control-label {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
   vertical-align: middle;
+  color: #767676;
 }
 #form-content form .custom-control-label::before {
   width: 20px;
@@ -4139,6 +4145,9 @@ h2 {
   top: unset;
   background: #e1e1e1 linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   border: 1px solid #cececeb3;
+}
+#form-content form .custom-radio {
+  margin-left: 28px;
 }
 #form-content form .custom-control-input:checked ~ .custom-control-label::before {
   color: transparent;
@@ -4168,9 +4177,9 @@ h2 {
   background: #84a145;
   color: white;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 26px;
   letter-spacing: 0.06em;
-  border: 1px;
+  border: 4px outset #99c82e8c;
   border-radius: 10px;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.08);
   margin-top: 0.25rem;
@@ -4191,6 +4200,11 @@ h2 {
   font-weight: normal;
   opacity: 0.7;
 }
+#footer-content #privacy-terms {
+  font-size: 14px;
+  font-family: myriad-pro, sans-serif;
+}
+
 @media (max-width: 767.98px) {
   .rounded-sm-0 {
     border-radius: 0 !important;
