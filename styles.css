@@ -4113,19 +4113,100 @@ h2 {
   top: -30px;
   left: -30px;
 }
+#form-content form {
+  color: #767676 !important;
+}
+#form-content form .form-control {
+  background-color: #f3f3f3;
+  box-shadow: 0px 2px 3px inset rgba(0, 0, 0, 0.11);
+}
+#form-content form .form-control:valid {
+  border: 1px solid #a3cd44;
+}
+#form-content form .is-valid {
+  border: 1px solid #a3cd44;
+}
+#form-content form .form-check-label {
+  font-size: 14px;
+}
+#form-content form .custom-control-label {
+  font-size: 12px;
+  vertical-align: middle;
+}
+#form-content form .custom-control-label::before {
+  width: 20px;
+  height: 20px;
+  top: unset;
+  background: #e1e1e1 linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px solid #cececeb3;
+}
+#form-content form .custom-control-input:checked ~ .custom-control-label::before {
+  color: transparent;
+  border-color: #84a145;
+  background-color: #a3cd44;
+}
+#form-content form .form-control:focus,
+#form-content form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #f3f3f3;
+}
+#form-content form .form-control:focus,
+#form-content form .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem #cececeb3 !important;
+}
+#form-content form .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  background-color: #a3cd44;
+  border-color: #84a145;
+}
+#form-content form .custom-radio .custom-control-input:checked ~ .custom-control-label::after,
+#form-content form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background: none;
+}
+#form-content button {
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  background: #84a145;
+  color: white;
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: 0.06em;
+  border: 1px;
+  border-radius: 10px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.08);
+  margin-top: 0.25rem;
+}
+#form-content button .material-icons {
+  width: 0;
+  margin-left: -10px;
+  font-size: 48px;
+  line-height: 34px;
+  vertical-align: middle;
+}
 
+#footer-content {
+  margin: 0 auto;
+  max-width: 870px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  opacity: 0.7;
+}
 @media (max-width: 767.98px) {
   .rounded-sm-0 {
     border-radius: 0 !important;
   }
 
-  #main-content, #product-content, #form-content {
+  #main-content,
+#product-content,
+#form-content {
     width: unset;
     height: unset;
     padding: unset;
+    margin: unset;
   }
 
-  #product-content, #form-content {
+  #product-content,
+#form-content {
     padding: 3rem 1rem;
   }
 
@@ -4144,5 +4225,9 @@ h2 {
     position: unset !important;
     top: unset !important;
     left: unset !important;
+  }
+
+  #footer-content {
+    padding: 0.75rem 1rem;
   }
 }

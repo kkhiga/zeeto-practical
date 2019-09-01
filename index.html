@@ -33,20 +33,20 @@
                 <h2>Most samples are available for a limited time only</h2>
 
                 <form>
-                    <div class="form-row">
+                    <div class="form-row py-1">
                         <div class="form-group col-md-6">
                             <input type="text" autocomplete="given-name" class="form-control" id="inputFirstName"
-                                placeholder="First Name">
+                                placeholder="First Name" required>
                         </div>
                         <div class="form-group col-md-6">
                             <input type="text" autocomplete="family-name" class="form-control" id="inputLastName"
-                                placeholder="Last Name">
+                                placeholder="Last Name" required>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row py-1">
                         <div class="form-group col-md-8">
                             <input type="email" autocomplete="email" class="form-control" id="inputEmail"
-                                placeholder="Email">
+                                placeholder="Email" required>
                         </div>
                         <div class="form-group col-md-4 align-self-center">
                             <div class="custom-control custom-checkbox">
@@ -55,22 +55,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group form-row">
-                        <label class="col-3 my-auto">Choose Sample: </label>
-                        <select class="form-control col">
+                    <div class="form-row py-1">
+                        <div class="form-group col">
+                            <input type="text" autocomplete="tel" class="form-control" id="inputPhone" placeholder="Phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group form-row py-1">
+                        <label class="col-md-4 my-auto">Choose Sample: </label>
+                        <select class="form-control col-md-8">
                             <option>Gillette Razors</option>
                         </select>
                     </div>
-                    <div class="form-group row">
+                    <div class="form-group row py-1">
                         <label class="col-auto my-auto">Gender: </label>
                         <div class="custom-control custom-radio mr-4">
                             <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                class="custom-control-input">
+                                class="custom-control-input" required>
                             <label class="custom-control-label" for="customRadioInline1">MALE</label>
                         </div>
                         <div class="custom-control custom-radio mr-2">
                             <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                class="custom-control-input">
+                                class="custom-control-input" required>
                             <label class="custom-control-label" for="customRadioInline2">FEMALE</label>
                         </div>
                     </div>
@@ -82,7 +87,26 @@
                 </form>
             </div>
         </div>
+
+        <div class="row mx-auto">
+            <div id="footer-content" class="text-center">
+                <br>
+                <span id="privacy-terms">Privacy Policy | Terms and Conditions © 2019 GetItFree.us</span><br><br>
+                Deals, coupons, freebies, samples, and other offers (collectively "Offers") change often. We can not make
+                any guarantee that you will receive any of the Offers that you request, because all Offers are made by other
+                entities. We do not mail out free samples or items (unless it is a giveaway/contest and specifically noted
+                that we will ship the item). We are not responsible if Offers are no longer available, change, you do not
+                receive them, you do not qualify, links are redirected and/or removed, the Offer is refused, and/or other
+                issues arise. The third-party product names, logos, brands, and trademarks shown on this website are the
+                property of their respective owners. These companies are not affiliated with GetItFree.us. These third
+                parties do not sponsor or endorse this website, its content, or services.
+            </div>
+        </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -13,12 +13,11 @@ $form-gray: #f3f3f3;
 // Sizes (width, height, margins, paddings)
 $nav-height: 40px;
 
-$shadow: 4px 4px 8px rgba(0,0,0,0.25);
+$shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 
 $w-main-content: 872px;
 $h-main-content: 510px;
 $mt-main-content: 47px;
-
 
 $w-product-content: 33.33%;
 $pt-product-content: 81px;
@@ -27,6 +26,8 @@ $w-form-content: 67.77%;
 $pt-form-content: 46px;
 $pl-form-content: 87px;
 $pr-form-content: 90px;
+
+// GLOBAL STYLES
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -52,6 +53,8 @@ h2 {
     opacity: 0.7;
     margin-bottom: 20px;
 }
+
+// COMPONENT SPECIFIC STYLES
 
 #bar {
     background-color: $dark-green;
@@ -88,7 +91,7 @@ h2 {
     background: white;
     border-radius: 0px 10px 10px 0px;
     box-shadow: $shadow;
-    
+
     #img-badge {
         img {
             position: absolute;
@@ -97,24 +100,134 @@ h2 {
             left: -30px;
         }
     }
+
+    form {
+        color: #767676 !important;
+        .form-control {
+            background-color: $form-gray;
+            box-shadow: 0px 2px 3px inset rgba(0, 0, 0, 0.11);
+
+            &:valid {
+                border: 1px solid $form-green;
+            }
+
+        }
+
+        .is-valid {
+            border: 1px solid $form-green;
+        }
+
+        .form-check-label {
+            font-size: 14px;
+        }
+    
+        .custom-control-label {
+            font-size: 12px;
+            vertical-align: middle;
+    
+            &::before {
+                width: 20px;
+                height: 20px;
+                top: unset;
+    
+                background: #e1e1e1 linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+                border: 1px solid #cececeb3;
+            }
+        }
+    
+        .custom-control-input:checked~.custom-control-label::before {
+            color: transparent;
+            border-color: $medium-green;
+            background-color: $form-green;
+        }
+    
+        .form-control:focus,
+        .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+            border-color: $form-gray;
+        }
+    
+        .form-control:focus,
+        .custom-control-input:focus~.custom-control-label::before {
+            box-shadow: 0 0 0 0.2rem #cececeb3 !important;
+        }
+    
+        .custom-control-input:not(:disabled):active~.custom-control-label::before {
+            background-color: $form-green;
+            border-color: $medium-green;
+        }
+    
+        .custom-radio .custom-control-input:checked~.custom-control-label::after,
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+            background: none;
+        }
+    }
+
+    button {
+        text-align: center;
+        width: 100%;
+        height: 70px;
+
+        background: $medium-green;
+        color: white;
+
+        font-weight: 700;
+        font-size: 34px;
+        letter-spacing: 0.06em;
+
+        border: 1px ;
+        border-radius: 10px;
+        text-shadow: 2px 2px rgba(0,0,0,0.08);
+        margin-top: 0.25rem;
+
+        .material-icons {
+            width: 0;
+            margin-left: -10px;
+            font-size: 48px;
+            line-height: 34px;
+            vertical-align: middle;
+        }
+    }
+
+
 }
 
-@include media-breakpoint-down(sm) { 
+#footer-content {
+    margin: 0 auto;
+    max-width: 870px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    opacity: 0.7;
+
+    #privacy-terms {
+        // font-size: 14px;
+        // font-family: 'Myriad Pro', sans-serif;
+    }
+}
+
+// BREAKPOINT STYLES
+
+@include media-breakpoint-down(sm) {
     .rounded-sm-0 {
         border-radius: 0 !important;
     }
 
-    #main-content, #product-content, #form-content {
+    #main-content,
+    #product-content,
+    #form-content {
         width: unset;
         height: unset;
         padding: unset;
+        margin: unset;
     }
 
-    #product-content, #form-content {
+    #product-content,
+    #form-content {
         padding: 3rem 1rem;
+        // box-shadow: none;
     }
 
-    #product-content{
+    #product-content {
         img {
             max-height: 20vh;
         }
@@ -133,9 +246,10 @@ h2 {
             top: unset !important;
             left: unset !important;
         }
-        
+
+    }
+
+    #footer-content {
+        padding: 0.75rem 1rem;
     }
 }
-
-
-
