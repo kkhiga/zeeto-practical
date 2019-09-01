@@ -4063,19 +4063,6 @@ nav {
   background: #3C4B19;
 }
 
-h1 {
-  font-weight: 600;
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 16px;
-  font-weight: 700;
-  font-style: italic;
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
-
 #bar {
   background-color: #3C4B19;
   height: 40px;
@@ -4092,7 +4079,7 @@ h2 {
   width: 33.33%;
   height: 100%;
   padding-top: 81px;
-  background: #99c82e8c;
+  background: rgba(153, 200, 46, 0.549);
   border-radius: 10px 0px 0px 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   text-align: center;
@@ -4107,6 +4094,17 @@ h2 {
   background: white;
   border-radius: 0px 10px 10px 0px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+#form-content h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+#form-content h2 {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  opacity: 0.7;
+  margin-bottom: 20px;
 }
 #form-content #img-badge img {
   position: absolute;
@@ -4144,7 +4142,7 @@ h2 {
   height: 20px;
   top: unset;
   background: #e1e1e1 linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-  border: 1px solid #cececeb3;
+  border: 1px solid rgba(206, 206, 206, 0.702);
 }
 #form-content form .custom-radio {
   margin-left: 28px;
@@ -4179,7 +4177,7 @@ h2 {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.06em;
-  border: 4px outset #99c82e8c;
+  border: 4px outset rgba(153, 200, 46, 0.549);
   border-radius: 10px;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.08);
   margin-top: 0.25rem;
